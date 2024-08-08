@@ -21,14 +21,5 @@
 ## Getting Started
 - [Installation](docs/install.md)
 - [Prepare Dataset](docs/prepare_dataset.md) (Notes: annotation generation of MapTRv2 is different from MapTR )
-- Train and Eval
-  
-  train:
-  '''
-  ./tools/dist_train.sh ./projects/configs/maptrv2/maptrv2_nusc_r50_24ep_w_centerline_fastbev/7_lvl_depth_seg_3.py 4
-  '''
-  test:
-  '''
-  ./tools/dist_test_map.sh ./projects/configs/maptrv2/maptrv2_nusc_r50_24ep_w_centerline_fastbev/7_lvl_depth_seg_3.py ./ckpts/epoch_24.pth 4
-  '''
+- [Train and Eval](docs/train_eval.md)
 - [Visualization](docs/visualization.md)
