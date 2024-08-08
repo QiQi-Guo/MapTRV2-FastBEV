@@ -4,14 +4,14 @@
 
 # Train and Test
 
-Train MapTR with 8 GPUs 
+Train MapTR with 4 GPUs 
 ```
-./tools/dist_train.sh ./projects/configs/maptr/maptr_tiny_r50_24e.py 8
+./tools/dist_train.sh ./projects/configs/maptrv2/maptrv2_nusc_r50_24ep_w_centerline_fastbev/7_lvl_depth_seg_3.py 4
 ```
 
 Eval MapTR with 8 GPUs
 ```
-./tools/dist_test_map.sh ./projects/configs/maptr/maptr_tiny_r50_24e.py ./path/to/ckpts.pth 8
+./tools/dist_test_map.sh ./projects/configs/maptrv2/maptrv2_nusc_r50_24ep_w_centerline_fastbev/7_lvl_depth_seg_3.py ./ckpts/epoch_24.pth 4
 ```
 
 
